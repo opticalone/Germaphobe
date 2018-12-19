@@ -6,14 +6,15 @@ public class JanitorController : MonoBehaviour {
 
     public float speed = 10f;
     public float lookSensitivity = 3;
-
+    
     //component cache
     private JanitorMotor motor;
 
 	// Use this for initialization
 	void Start () {
         motor = GetComponent<JanitorMotor>();
-	}
+        Cursor.lockState = CursorLockMode.Confined;
+    }
 	
 	// Update is called once per frame
 	void Update ()
