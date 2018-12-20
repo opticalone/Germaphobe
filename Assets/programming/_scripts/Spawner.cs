@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
 
                 Vector3 Spawnpos = (Random.insideUnitSphere * radius);
 
-                Spawnpos = spawnPoint.transform.position + (Random.insideUnitSphere * radius);
+                Spawnpos = spawnPoint.transform.position /*+ (Random.insideUnitSphere * radius)*/;
 
                 timeDelay -= (timeDelay/2);
 

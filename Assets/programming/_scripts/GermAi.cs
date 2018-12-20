@@ -44,7 +44,7 @@ public class GermAi : MonoBehaviour {
 
     private void Barf()
     {
-        Instantiate(fg);
+       // Instantiate(fg);
     }
 
     //private void LateUpdate()

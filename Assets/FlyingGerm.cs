@@ -9,7 +9,8 @@ public class FlyingGerm : MonoBehaviour {
     Rigidbody rb;
     [SerializeField]
     Transform target;
-    public float attackThreshold;
+    public float attackThreshold =2;
+    public float speed = 9f;
     Animator anim;
 
 	// Use this for initialization
@@ -22,7 +23,7 @@ public class FlyingGerm : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.LookAt(target.position);
-        rb.AddForce(transform.forward, ForceMode.Force);
+        rb.AddForce(transform.forward * speed, ForceMode.Force);
         if (Vector3.Distance(transform.position, target.transform.position) <= attackThreshold)
         {
             anim.SetBool("ShouldExplode", true);

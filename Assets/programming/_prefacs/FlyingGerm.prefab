@@ -69,9 +69,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1050071518361826}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0.2
-  m_AngularDrag: 0.05
+  m_Mass: 3
+  m_Drag: 0.5
+  m_AngularDrag: 0.2
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d5979c62a6f2248befbbbe3c8a8667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4208914553082722, guid: 394b83dd9e1a96441ae85003b2d19c7d, type: 2}
   attackThreshold: 2
 --- !u!114 &114643791992167894
 MonoBehaviour:
